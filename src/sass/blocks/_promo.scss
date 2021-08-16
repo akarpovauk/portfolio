@@ -8,15 +8,28 @@
         margin-top: 10px;
         width: 535px;
     }
+    &__subtitle {
+        position: relative;
+        padding-left: 12px;
+        z-index: 2;
+        @include before_circle;
+    }
     &__btns {
         margin-top: 25px;
         display: flex;
         width: 250px;
+        align-items: center;
+        justify-content: space-between;
     }
     &__link {
         color: #000000;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
         &:hover {
             color: #000000;
+            text-decoration: none;
+            
         }
     }
 }
