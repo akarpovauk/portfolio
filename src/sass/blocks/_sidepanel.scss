@@ -8,6 +8,13 @@
     align-items: center;
     height: 340px;
     z-index: 3;
+    &__link {
+        &:hover {
+            svg path {
+                fill: $main-color;
+            }
+        }
+    }
     &__divider {
         height: 70px;
         width: 2px;
