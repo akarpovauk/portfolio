@@ -10,6 +10,10 @@
     padding: 0;
 }
 
+ul {
+    margin-bottom: 0;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -28,3 +32,5 @@
 @import 'blocks/menu';
 @import 'blocks/about';
 @import 'blocks/cv';
+@import 'blocks/experience';
+@import 'blocks/progress';

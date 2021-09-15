@@ -1,17 +1,5 @@
 .cv {
     padding-top: 120px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__wrapper {
         padding: 60px 89px 0 65px;
         display: grid;   
@@ -21,6 +9,7 @@
     &__column {
         &-title {
             position: relative;
+            padding-top: 0;
             padding-left: 50px;
             &:before {
                 content: '';

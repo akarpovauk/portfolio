@@ -1,0 +1,38 @@
+.experience {
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: 270px;
+        row-gap: 13px;
+        column-gap: 13px;
+    }
+    &__item {
+        position: relative;
+        padding: 115px 29px 25px 30px;
+        width: 270px;
+        height: 270px;
+        border: 1px solid #000000;
+    }
+    &__icon {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        &_top45 {
+            top: 45px;
+        }
+        &_top38 {
+            top: 38px;
+        }
+    }
+    &__descr {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+   
+}

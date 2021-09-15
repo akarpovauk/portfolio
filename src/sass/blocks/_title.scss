@@ -1,5 +1,6 @@
 .title {
     margin: 0;
+    padding-top: 5px;
     font-weight: bold;
     font-size: 36px;
     line-height: 60px;
@@ -17,5 +18,25 @@
     }
     &_fz48 {
         font-size: 48px;
+    }
+    &_center {
+        position: relative;
+        text-align: center;
+        padding-top: 6px;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX( -50%);
+        }
+    }
+    &_left {
+        position: relative;
+        padding: 8px 0 0 12px;
+        @include before_circle;
+    }
+}
+.subtitle {
+    &_center {
+        text-align: center;
     }
 }

@@ -3,7 +3,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 400px 570px;
-        grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+        grid-template-rows: minmax(245px, auto)  minmax(315px, auto);
         grid-auto-rows: minmax(245px, auto);
         column-gap: 70px;
         row-gap: 40px;
@@ -15,16 +15,10 @@
         }
     }
     &__descr {
-        padding-top: 7px;
         .divider {
             margin-top: 0;
             margin-left: 0;
         }
-    }
-    &__title {
-        position: relative;
-        padding: 1px 0 0 12px;
-        @include before_circle;
     }
     &__text {
         margin: 20px 0 0 0;
@@ -34,7 +28,8 @@
     }
     &__skills {
         display: grid;
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(116px, auto) minmax(180px, auto);
         grid-auto-rows: 1fr;
         column-gap: 50px;
         row-gap: 20px;
