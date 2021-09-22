@@ -54,6 +54,14 @@
             font-size: 12px;
             line-height: 18px;
         }
+        .error {
+            border: 1px solid red;
+        }
+        label.error {
+            border: none;
+            top: 34px;
+            color: darkred;
+        }
     }
     &__input {
         position: relative;
@@ -76,7 +84,6 @@
             padding: 20px 20px;
             font-size: 12px;
             font-weight: 500;
-
         }
     }
     &__btn {
@@ -86,5 +93,6 @@
         font-weight: 700;
 
     }
+
 
 }

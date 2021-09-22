@@ -16,3 +16,60 @@ const   counters = document.querySelectorAll('.progress__value'),
 counters.forEach((item, i) =>{
     bars[i].style.width = item.innerHTML;
 });
+
+const  /*  send = document.querySelector('.contacts__btn'), */
+        modal = document.querySelector('.modal'),
+        closeWindow = document.querySelector('.modal__close');
+
+/* send.addEventListener('click', () => {
+    modal.classList.add('active');
+}); */
+
+closeWindow.addEventListener('click', () => {
+    modal.classList.remove('active');
+});
+
+$(document).ready(function(){
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                text: "required"
+            },
+            messages: {
+                name: "Пожалуйста, введите свое имя",
+                email: {
+                  required: "Как мне с вами связаться?",
+                  email: "Формат почты: name@domain.com"
+                },
+                text: "Как я могу вам помочь?"
+              }
+        });
+    }
+
+    validateForms ('.contacts__form');
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input", "textarea").val("");
+            $('.modal').addClass('active');
+            $('form').trigger('reset');
+        });
+
+        return false;
+    });
+});
