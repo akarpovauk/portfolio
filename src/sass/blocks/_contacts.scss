@@ -9,6 +9,8 @@
     &__photo {
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &__descr {
@@ -63,6 +65,35 @@
             color: darkred;
         }
     }
+    &__triggers {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+    &__policy {
+        position: relative;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        label {
+            padding-right: 5px;
+        }
+        label.error {
+            top: 6px;
+            left: 7px;
+            background-color: transparent;
+            font-size: 16px;
+            line-height: 18px;
+            color: red;
+        }
+
+    }
     &__input {
         position: relative;
         input {
@@ -71,8 +102,7 @@
             padding: 0 20px;
             font-size: 12px;
             font-weight: 500;
-        }
-        
+        }   
     }
     &__textarea {
         position: relative;
@@ -91,8 +121,5 @@
         font-size: 14px;
         line-height: 21px;
         font-weight: 700;
-
     }
-
-
 }

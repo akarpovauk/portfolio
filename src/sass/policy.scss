@@ -1,0 +1,60 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import 'base/mixins';
+@import 'base/variables';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.policy {
+    padding: 100px 0;
+    &__part {
+        padding-top: 60px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        a {
+            color: #000000;
+            font-weight: 500;
+        }
+    }
+    &__list {
+        list-style:  none;
+        li {
+            position: relative;
+            padding-left: 45px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 2px;
+                background: #000000;
+                left: 22px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+
+@import 'blocks/title';
+@import 'blocks/menu';
+@import 'blocks/overlay';
+@import 'blocks/pageup';
+
+
+

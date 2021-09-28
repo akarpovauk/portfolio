@@ -38,7 +38,8 @@ $(document).ready(function(){
                     required: true,
                     email: true
                 },
-                text: "required"
+                text: "required",
+                policy: "required"
             },
             messages: {
                 name: "Пожалуйста, введите свое имя",
@@ -46,7 +47,8 @@ $(document).ready(function(){
                   required: "Как мне с вами связаться?",
                   email: "Формат почты: name@domain.com"
                 },
-                text: "Как я могу вам помочь?"
+                text: "Как я могу вам помочь?",
+                policy: "*"
               }
         });
     }
