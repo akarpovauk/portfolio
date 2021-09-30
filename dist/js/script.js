@@ -2,6 +2,7 @@ const   hamburger = document.querySelector('.hamburger'),
         menu = document.querySelector('.menu'),
         menuLink = document.querySelectorAll('.menu__link'),
         closeElem = document.querySelector('.menu__close');
+       
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
