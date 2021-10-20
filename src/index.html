@@ -132,7 +132,16 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/photo.jpg" alt="photo">
+                    <!-- <img srcset="img/photo_min.jpg 300w,
+                                img/photo.jpg 400w"
+                    sizes="(max-width: 576px) 280px,
+                                (min-width: 577px) 400px"           
+                    src="img/photo.jpg" alt="photo"> -->
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/photo_min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/photo.jpg">
+                        <img src="img/photo.jpg" alt="Alena's photo">
+                    </picture>
                 </div>
            
                 <section class="about__descr">
@@ -322,7 +331,7 @@
         </div>
     </article>
 
-<!--     <section class="progress">
+    <section class="progress">
         <div class="container">
             <div class="progress__wrapper">
 
@@ -388,9 +397,9 @@
 
             </div>
         </div>
-    </section> -->
+    </section>
 
-<!--     <article class="portfolio">
+    <article class="portfolio">
         <div class="container">
             <h2 id="portfolio" class="title title_fz16 title_center">Портфолио</h2>
             <h3 class="title subtitle_center">Мои работы</h3>
@@ -417,9 +426,9 @@
                 
             </div>
         </div>
-    </article> -->
+    </article>
     
-<!--     <article class="price">
+    <article class="price">
         <div class="container">
             <h2 id="price" class="title title_fz16 title_center">Прайс-лист</h2>
             <div class="divider"></div>
@@ -459,15 +468,16 @@
                     </li>
                 </ul>
         </div>
-    </article> -->
+    </article>
     
-<!--     <article class="contacts">
+    <article class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
+
                 <div class="contacts__photo">
                     <img src="img/photo.jpg" alt="photo">
                 </div>
-              
+                
                 <section class="contacts__descr">
                     <h2 id="contacts" class="title title_fz16 title_left">Контакты</h2>
                     <div class="title contacts__subtitle">Свяжитесь со мной</div>
@@ -518,9 +528,9 @@
                 
             </div>
         </div>
-    </article> -->
+    </article>
 
-<!--     <div class="modal">
+    <div class="modal">
         <div class="overlay modal__overlay">
             <div class="modal__window" id="thanks">
                 <div class="modal__close">
@@ -534,7 +544,7 @@
                 
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js" ></script>
