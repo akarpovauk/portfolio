@@ -70,6 +70,24 @@
             grid-template: 45px 187px 45px/ repeat(2, 250px);
         }
     }
+    .policy {
+        .title {
+            &_main {
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+            }   
+        }
+        &__part {
+            margin: 0;
+            padding: 40px 10px 0 10px;
+        }
+        &__text {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -299,7 +317,27 @@
         &__btn {
             grid-row: unset;
         }
-
+    }
+    .policy {
+        padding-bottom: 20px;
+        .title {
+            &_main {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            &_fz20 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__item {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 }
 
@@ -315,6 +353,9 @@
         &__block {
             width: 245px;
             padding-left: 20px;
+        }
+        &__social {
+            left: 55px;
         }
     }
     .title {
@@ -469,6 +510,29 @@
     .modal {
         &__window {
             width: 310px;
+        }
+    }
+    .policy {
+        .title {
+            &_main {
+                font-size: 20px;
+                line-height: 26px;
+            }
+            &_fz20 {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        &__part {
+            padding: 30px 5px 0 5px;
+        }
+        &__text {
+            font-size: 11px;
+            line-height: 18px;
+        }
+        &__item {
+            font-size: 11px;
+            line-height: 18px;
         }
     }
 }

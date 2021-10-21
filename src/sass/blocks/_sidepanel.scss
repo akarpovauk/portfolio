@@ -9,11 +9,12 @@
     height: 340px;
     z-index: 3;
     &__link {
-        &:hover {
+        @include link_hover;
+        /* &:hover {
             svg path {
                 fill: $main-color;
             }
-        }
+        } */
     }
     &__divider {
         height: 70px;

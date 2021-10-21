@@ -11,3 +11,26 @@
         background: $main-color;
     }
 }
+
+@mixin link_hover {
+    &:hover {
+        svg path {
+            fill: $main-color;
+        }
+    }
+}
+
+@mixin link_hover_menu {
+    &:hover {
+        svg path {
+            fill: #fff;
+        }
+    }
+}
+
+@mixin btn_hover {
+    &:hover {
+        background: #f58e19;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    }
+}
